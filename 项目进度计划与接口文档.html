@@ -1,0 +1,1476 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>body {
+  width: 45em;
+  border: 1px solid #ddd;
+  outline: 1300px solid #fff;
+  margin: 16px auto;
+}
+
+body .markdown-body
+{
+  padding: 30px;
+}
+
+@font-face {
+  font-family: fontawesome-mini;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+@font-face {
+  font-family: octicons-anchor;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+.markdown-body {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #333333;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body b,
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body sub,
+.markdown-body sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.markdown-body sup {
+  top: -0.5em;
+}
+.markdown-body sub {
+  bottom: -0.25em;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body .codehilitetable {
+  border: 0;
+  border-spacing: 0;
+}
+
+.markdown-body .codehilitetable tr {
+  border: 0;
+}
+
+.markdown-body .codehilitetable pre,
+.markdown-body .codehilitetable div.codehilite {
+  margin: 0;
+}
+
+.markdown-body .linenos,
+.markdown-body .code,
+.markdown-body .codehilitetable td {
+  border: 0;
+  padding: 0;
+}
+
+.markdown-body td:not(.linenos) .linenodiv {
+  padding: 0 !important;
+}
+
+.markdown-body .code {
+  width: 100%;
+}
+
+.markdown-body .linenos div pre,
+.markdown-body .linenodiv pre,
+.markdown-body .linenodiv {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.markdown-body .code div pre,
+.markdown-body .code div {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.markdown-body * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font: 13px Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.4;
+}
+
+.markdown-body a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:focus,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before,
+.markdown-body hr:after {
+  display: table;
+  content: " ";
+}
+
+.markdown-body hr:after {
+  clear: both;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #e7e7e7;
+  background-image: -moz-linear-gradient(#fefefe, #e7e7e7);
+  background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
+  background-image: linear-gradient(#fefefe, #e7e7e7);
+  background-repeat: repeat-x;
+  border-radius: 2px;
+  border: 1px solid #cfcfcf;
+  color: #000;
+  padding: 3px 5px;
+  line-height: 10px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  display: inline-block;
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body .headeranchor-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  padding-right: 6px;
+  padding-left: 30px;
+  margin-left: -30px;
+}
+
+.markdown-body .headeranchor-link:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .headeranchor,
+.markdown-body h2 .headeranchor,
+.markdown-body h3 .headeranchor,
+.markdown-body h4 .headeranchor,
+.markdown-body h5 .headeranchor,
+.markdown-body h6 .headeranchor {
+  display: none;
+  color: #000;
+  vertical-align: middle;
+}
+
+.markdown-body h1:hover .headeranchor-link,
+.markdown-body h2:hover .headeranchor-link,
+.markdown-body h3:hover .headeranchor-link,
+.markdown-body h4:hover .headeranchor-link,
+.markdown-body h5:hover .headeranchor-link,
+.markdown-body h6:hover .headeranchor-link {
+  height: 1em;
+  padding-left: 8px;
+  margin-left: -30px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .headeranchor-link .headeranchor,
+.markdown-body h2:hover .headeranchor-link .headeranchor,
+.markdown-body h3:hover .headeranchor-link .headeranchor,
+.markdown-body h4:hover .headeranchor-link .headeranchor,
+.markdown-body h5:hover .headeranchor-link .headeranchor,
+.markdown-body h6:hover .headeranchor-link .headeranchor {
+  display: inline-block;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre,
+.markdown-body .admonition {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body code,
+.markdown-body samp {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .codehilite {
+  margin-bottom: 16px;
+}
+
+.markdown-body .codehilite pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .codehilite pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+/* Admonition */
+.markdown-body .admonition {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  position: relative;
+  border-radius: 3px;
+  border: 1px solid #e0e0e0;
+  border-left: 6px solid #333;
+  padding: 10px 10px 10px 30px;
+}
+
+.markdown-body .admonition table {
+  color: #333;
+}
+
+.markdown-body .admonition p {
+  padding: 0;
+}
+
+.markdown-body .admonition-title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.markdown-body .admonition>.admonition-title {
+  color: #333;
+}
+
+.markdown-body .attention>.admonition-title {
+  color: #a6d796;
+}
+
+.markdown-body .caution>.admonition-title {
+  color: #d7a796;
+}
+
+.markdown-body .hint>.admonition-title {
+  color: #96c6d7;
+}
+
+.markdown-body .danger>.admonition-title {
+  color: #c25f77;
+}
+
+.markdown-body .question>.admonition-title {
+  color: #96a6d7;
+}
+
+.markdown-body .note>.admonition-title {
+  color: #d7c896;
+}
+
+.markdown-body .admonition:before,
+.markdown-body .attention:before,
+.markdown-body .caution:before,
+.markdown-body .hint:before,
+.markdown-body .danger:before,
+.markdown-body .question:before,
+.markdown-body .note:before {
+  font: normal normal 16px fontawesome-mini;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.5;
+  color: #333;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.markdown-body .admonition:before {
+  content: "\f056\00a0";
+  color: 333;
+}
+
+.markdown-body .attention:before {
+  content: "\f058\00a0";
+  color: #a6d796;
+}
+
+.markdown-body .caution:before {
+  content: "\f06a\00a0";
+  color: #d7a796;
+}
+
+.markdown-body .hint:before {
+  content: "\f05a\00a0";
+  color: #96c6d7;
+}
+
+.markdown-body .danger:before {
+  content: "\f057\00a0";
+  color: #c25f77;
+}
+
+.markdown-body .question:before {
+  content: "\f059\00a0";
+  color: #96a6d7;
+}
+
+.markdown-body .note:before {
+  content: "\f040\00a0";
+  color: #d7c896;
+}
+
+.markdown-body .admonition::after {
+  content: normal;
+}
+
+.markdown-body .attention {
+  border-left: 6px solid #a6d796;
+}
+
+.markdown-body .caution {
+  border-left: 6px solid #d7a796;
+}
+
+.markdown-body .hint {
+  border-left: 6px solid #96c6d7;
+}
+
+.markdown-body .danger {
+  border-left: 6px solid #c25f77;
+}
+
+.markdown-body .question {
+  border-left: 6px solid #96a6d7;
+}
+
+.markdown-body .note {
+  border-left: 6px solid #d7c896;
+}
+
+.markdown-body .admonition>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body .admonition>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* progress bar*/
+.markdown-body .progress {
+  display: block;
+  width: 300px;
+  margin: 10px 0;
+  height: 24px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #ededed;
+  position: relative;
+  box-shadow: inset -1px 1px 3px rgba(0, 0, 0, .1);
+}
+
+.markdown-body .progress-label {
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  width: 100%; margin: 0;
+  line-height: 24px;
+  color: #333;
+  text-shadow: 1px 1px 0 #fefefe, -1px -1px 0 #fefefe, -1px 1px 0 #fefefe, 1px -1px 0 #fefefe, 0 1px 0 #fefefe, 0 -1px 0 #fefefe, 1px 0 0 #fefefe, -1px 0 0 #fefefe, 1px 1px 2px #000;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.markdown-body .progress-bar {
+  height: 24px;
+  float: left;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #96c6d7;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), inset 0 -1px 0 rgba(0, 0, 0, .1);
+  background-size: 30px 30px;
+  background-image: -webkit-linear-gradient(
+    135deg, rgba(255, 255, 255, .4) 27%,
+    transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%,
+    transparent 77%, transparent
+  );
+  background-image: -moz-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -ms-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -o-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+}
+
+.markdown-body .progress-100plus .progress-bar {
+  background-color: #a6d796;
+}
+
+.markdown-body .progress-80plus .progress-bar {
+  background-color: #c6d796;
+}
+
+.markdown-body .progress-60plus .progress-bar {
+  background-color: #d7c896;
+}
+
+.markdown-body .progress-40plus .progress-bar {
+  background-color: #d7a796;
+}
+
+.markdown-body .progress-20plus .progress-bar {
+  background-color: #d796a6;
+}
+
+.markdown-body .progress-0plus .progress-bar {
+  background-color: #c25f77;
+}
+
+.markdown-body .candystripe-animate .progress-bar{
+  -webkit-animation: animate-stripes 3s linear infinite;
+  -moz-animation: animate-stripes 3s linear infinite;
+  animation: animate-stripes 3s linear infinite;
+}
+
+@-webkit-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@-moz-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+.markdown-body .gloss .progress-bar {
+  box-shadow:
+    inset 0 4px 12px rgba(255, 255, 255, .7),
+    inset 0 -12px 0 rgba(0, 0, 0, .05);
+}
+
+/* Multimarkdown Critic Blocks */
+.markdown-body .critic_mark {
+  background: #ff0;
+}
+
+.markdown-body .critic_delete {
+  color: #c82829;
+  text-decoration: line-through;
+}
+
+.markdown-body .critic_insert {
+  color: #718c00 ;
+  text-decoration: underline;
+}
+
+.markdown-body .critic_comment {
+  color: #8e908c;
+  font-style: italic;
+}
+
+.markdown-body .headeranchor {
+  font: normal normal 16px octicons-anchor;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.headeranchor:before {
+  content: '\f05c';
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 4px 0.25em -20px;
+  vertical-align: middle;
+}
+
+/* Media */
+@media only screen and (min-width: 480px) {
+  .markdown-body {
+    font-size:14px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .markdown-body {
+    font-size:16px;
+  }
+}
+
+@media print {
+  .markdown-body * {
+    background: transparent !important;
+    color: black !important;
+    filter:none !important;
+    -ms-filter: none !important;
+  }
+
+  .markdown-body {
+    font-size:12pt;
+    max-width:100%;
+    outline:none;
+    border: 0;
+  }
+
+  .markdown-body a,
+  .markdown-body a:visited {
+    text-decoration: underline;
+  }
+
+  .markdown-body .headeranchor-link {
+    display: none;
+  }
+
+  .markdown-body a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  .markdown-body abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .markdown-body .ir a:after,
+  .markdown-body a[href^="javascript:"]:after,
+  .markdown-body a[href^="#"]:after {
+    content: "";
+  }
+
+  .markdown-body pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  .markdown-body pre,
+  .markdown-body blockquote {
+    border: 1px solid #999;
+    padding-right: 1em;
+    page-break-inside: avoid;
+  }
+
+  .markdown-body .progress,
+  .markdown-body .progress-bar {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .markdown-body .progress {
+    border: 1px solid #ddd;
+  }
+
+  .markdown-body .progress-bar {
+    height: 22px;
+    border-right: 1px solid #ddd;
+  }
+
+  .markdown-body tr,
+  .markdown-body img {
+    page-break-inside: avoid;
+  }
+
+  .markdown-body img {
+    max-width: 100% !important;
+  }
+
+  .markdown-body p,
+  .markdown-body h2,
+  .markdown-body h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  .markdown-body h2,
+  .markdown-body h3 {
+    page-break-after: avoid;
+  }
+}
+</style><title>httpapi</title></head><body><article class="markdown-body"><div class="toc">
+<ul>
+<li><a href="#http">华为大学业务报名系统http接口文档</a><ul>
+<li><a href="#1">1 项目进度安排表</a><ul>
+<li><a href="#11">1.1 项目前端开发需求</a></li>
+<li><a href="#12">1.2 前端开发第一期时间安排表</a></li>
+<li><a href="#13">1.3 接口对接修改，页面测试</a></li>
+<li><a href="#14">1.4 接口联调，项目上线</a></li>
+</ul>
+</li>
+<li><a href="#2">2 接口约定</a><ul>
+<li><a href="#21">2.1 请求约定</a></li>
+<li><a href="#22">2.2 响应约定</a></li>
+</ul>
+</li>
+<li><a href="#3">3 首页接口</a><ul>
+<li><a href="#31">3.1 获取热门搜索</a></li>
+<li><a href="#32">3.2 获取学习方案数据</a></li>
+<li><a href="#33">3.3 获取报名状态信息</a></li>
+<li><a href="#34">3.4 报名须知</a></li>
+<li><a href="#35">3.5 最新班级信息</a></li>
+<li><a href="#36">3.6 最热门班级列表</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h1 id="http"><a name="user-content-http" href="#http" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>华为大学业务报名系统http接口文档</h1>
+<h2 id="1"><a name="user-content-1" href="#1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>1 项目进度安排表</h2>
+<h3 id="11"><a name="user-content-11" href="#11" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>1.1 项目前端开发需求</h3>
+<blockquote>
+<ul>
+<li>兼容ie9+，chrome，firefox，opear浏览器，分辨率最小宽度1165px布局，当页面宽度过大，则居中显示，当页面宽度过小，则出现横向滚动条</li>
+<li>使用angularjs框架构建项目</li>
+<li>以json做为前后台数据交互格式，以接口api接口方式进行开发，json示例文档在/ajax目录下</li>
+<li>使用统一css文件</li>
+</ul>
+</blockquote>
+<h3 id="12"><a name="user-content-12" href="#12" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>1.2 前端开发第一期时间安排表</h3>
+<table>
+<thead>
+<tr>
+<th>时间段</th>
+<th>工作内容</th>
+<th>花费时间</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4月5日-11日</td>
+<td>页面重构，跳转逻辑,框架结构</td>
+<td>页面重构4天;跳转逻辑,框架实现1天</td>
+<td>课程审批(3页),报名详情(3页),我的报名(3页),搜索(1页)重构，页面链接逻辑实现，页面结构实现</td>
+</tr>
+<tr>
+<td>4月12日</td>
+<td>课程审批</td>
+<td>功能实现1天</td>
+<td>分页功能;页面跳转;详情页;通过、驳回功能</td>
+</tr>
+<tr>
+<td>4月13日-14日</td>
+<td>报名详情</td>
+<td>功能实现2天</td>
+<td>信息展示，<s>视频功能</s>，<s>收藏功能</s>，<s>分享功能</s>，提交报名，报名结果，进度</td>
+</tr>
+<tr>
+<td>4月15日</td>
+<td>我的报名</td>
+<td>功能实现1天</td>
+<td>报名列表，报名状态，课程信息，<s>分享功能</s>，报名进度，<s>学习</s>，<s>考试</s></td>
+</tr>
+<tr>
+<td>4月16日-18日</td>
+<td>搜索</td>
+<td>功能实现2天</td>
+<td>搜索实现，筛选功能与效果，分页功能</td>
+</tr>
+</tbody>
+</table>
+<h3 id="13"><a name="user-content-13" href="#13" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>1.3 接口对接修改，页面测试</h3>
+<table>
+<thead>
+<tr>
+<th>时间段</th>
+<th>工作内容</th>
+<th>花费时间</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4月19日-22日</td>
+<td>前端功能测试，api对接</td>
+<td>4天</td>
+<td>确定接口可行性，修改接口，页面功能测试与修改等</td>
+</tr>
+</tbody>
+</table>
+<h3 id="14"><a name="user-content-14" href="#14" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>1.4 接口联调，项目上线</h3>
+<table>
+<thead>
+<tr>
+<th>时间段</th>
+<th>工作内容</th>
+<th>花费时间</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4月25日-29日</td>
+<td>前后台数据对接，产品上线</td>
+<td>5天</td>
+<td>前后台数据联调，bug修复，产品上线</td>
+</tr>
+</tbody>
+</table>
+<h2 id="2"><a name="user-content-2" href="#2" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>2 接口约定</h2>
+<h3 id="21"><a name="user-content-21" href="#21" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>2.1 请求约定</h3>
+<blockquote>
+<ul>
+<li>接口请求的参数是JSON格式的数据，默认使用get请求</li>
+<li>请求使用同一接口，根据type不同路由到不同的action（待定）</li>
+<li>每次请求都需要通过Cookies传递如下参数：</li>
+</ul>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>名称</th>
+<th>必须</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>lang</td>
+<td>国际华语言</td>
+<td>否</td>
+<td>系统当前语言版本，如果不传值，则默认为中文</td>
+</tr>
+</tbody>
+</table>
+<h3 id="22"><a name="user-content-22" href="#22" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>2.2 响应约定</h3>
+<blockquote>
+<ul>
+<li>接口响应返回的是JSON格式的数据，JSON的结构如下：</li>
+</ul>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>名称</th>
+<th>类型</th>
+<th>可为空</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ver</td>
+<td>版本</td>
+<td>Integer</td>
+<td>否</td>
+<td>目前均为0</td>
+</tr>
+<tr>
+<td>ret</td>
+<td>调用结果</td>
+<td>Boolean</td>
+<td>否</td>
+<td>true=调用成功，false=调用异常</td>
+</tr>
+<tr>
+<td>msg</td>
+<td>异常/提示信息</td>
+<td>String</td>
+<td>是</td>
+<td>ret=true/false均可能有值</td>
+</tr>
+<tr>
+<td>errcode</td>
+<td>异常代码</td>
+<td>String</td>
+<td>是</td>
+<td>当ret=false时有值，如：“B”</td>
+</tr>
+<tr>
+<td>total</td>
+<td>总数</td>
+<td>Integer</td>
+<td>否</td>
+<td>记录总数，用于分页</td>
+</tr>
+<tr>
+<td>data</td>
+<td>业务数据</td>
+<td>any</td>
+<td>是</td>
+<td>任意类型，如单值、对象、数据</td>
+</tr>
+</tbody>
+</table>
+<p><strong> 示例： </strong> <br />
+<pre><code class="javascript">    {
+        &quot;version&quot;: 0, // [integer] 版本号，目前均为0
+        &quot;result&quot;: true, // [boolean] 调用结果,true=调用成功，false=调用异常
+        &quot;message&quot;: &quot;这是提示或异常信息&quot;, // [string] 异常/提示信息 ，当热result 返回结果失败时，用于提示用户的信息
+        &quot;error&quot;: &quot;B&quot;, // [string] 异常代码 用于确定异常问题类型，便于开发人员迅速定位问题
+        &quot;total&quot;: 0, // [integer] 总数，记录总数，用于分页
+        &quot;data&quot;: null //[any] 业务数据 任意类型，如单值、对象、数据
+    }
+</code></pre></p>
+<h2 id="3"><a name="user-content-3" href="#3" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>3 首页接口</h2>
+<h3 id="31"><a name="user-content-31" href="#31" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>3.1 获取热门搜索</h3>
+<blockquote>
+<ul>
+<li>URL：/</li>
+<li>json模拟文件地址:/ajax/getSearchInfo</li>
+<li>描述：获取热门搜索关键定列表</li>
+</ul>
+</blockquote>
+<p><strong> 请求参数示例： </strong> <br />
+<pre><code class="javascript">{
+    &quot;type&quot; : &quot;getSearchInfo&quot;, // 请求
+    &quot;start&quot;:0,
+    &quot;limit&quot;:10
+}
+</code></pre></p>
+<p><strong> 响应结果示例： </strong> <br />
+<pre><code class="javascript">{
+    &quot;version&quot;: 0,
+    &quot;result&quot;: true,
+    &quot;message&quot;: &quot;这是提示或异常信息&quot;,
+    &quot;error&quot;: &quot;B&quot;,
+    &quot;total&quot;: 0,
+    &quot;data&quot;: [{
+        &quot;id&quot;: 1111,  // 热点推荐id
+        &quot;url&quot; : &quot;#&quot;,  // 点击热点推荐链接地址
+        &quot;name&quot;:&quot;FBB&quot; // 热点推荐名称
+    },{
+        &quot;id&quot;: 1111, 
+        &quot;url&quot; : &quot;#&quot;, 
+        &quot;name&quot;:&quot;李冰班&quot;
+    }]
+}
+</code></pre></p>
+<h3 id="32"><a name="user-content-32" href="#32" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>3.2 获取学习方案数据</h3>
+<blockquote>
+<ul>
+<li>URL：/</li>
+<li>json模拟文件地址:/ajax/getChooseList</li>
+<li>描述：获取首页您目前可以选择的学习方案数据列表</li>
+</ul>
+</blockquote>
+<p><strong> 请求参数示例： </strong> <br />
+<pre><code class="javascript">{
+    &quot;type&quot; : &quot;getChooseList&quot;, // 请求
+    &quot;start&quot;:0,
+    &quot;limit&quot;:5
+}
+</code></pre></p>
+<p><strong> 响应结果示例： </strong> <br />
+<pre><code class="javascript">{
+    &quot;version&quot;: 0,
+    &quot;result&quot;: true,
+    &quot;message&quot;: &quot;这是提示或异常信息&quot;,
+    &quot;error&quot;: &quot;B&quot;,
+    &quot;total&quot;: 5,
+    &quot;data&quot;: [{
+        &quot;id&quot;: 1111, // 学习方案id
+        &quot;title&quot; : &quot;变革战略预备队&quot;,  // 学习方案 标题
+        &quot;picture&quot; : &quot;images/change.png&quot;, // 学习方案图片
+        &quot;name&quot; : &quot;李冰班&quot;, // 班级名称
+        &quot;discript&quot; : &quot;变革战略预备队是为公司变革战略调整储备的将士与精英，目标 是为了更好的多产粮。&quot;, //学习方案简介
+        &quot;duration&quot; : &quot;30天&quot;, // 培训时长
+        &quot;start&quot; : &quot;2016.03.02&quot;, // 最近开班时间
+        &quot;places&quot; : 38, // 剩余名额
+        &quot;location&quot; : &quot;深圳&quot;, // 地点
+        &quot;price&quot; :  &quot;RMB 500&quot;, // 培训费用
+        &quot;payway&quot; : &quot;组织付费&quot; // 付费方式
+    },{
+        &quot;id&quot;: 222,
+        &quot;title&quot; : &quot;变革战略预备队&quot;,
+        &quot;picture&quot; : &quot;images/reserve.png&quot;,
+        &quot;name&quot; : &quot;李冰班&quot;,
+        &quot;discript&quot; : &quot;变革战略预备队是为公司变革战略调整储备的将士与精英，目标 是为了更好的多产粮。&quot;,
+        &quot;duration&quot; : &quot;30天&quot;,
+        &quot;start&quot; : &quot;2016.03.02&quot;,
+        &quot;places&quot; : 38,
+        &quot;location&quot; : &quot;深圳&quot;,
+        &quot;price&quot; :  &quot;RMB 500&quot;,
+        &quot;payway&quot; : &quot;组织付费&quot;
+    }]
+}
+</code></pre></p>
+<h3 id="33"><a name="user-content-33" href="#33" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>3.3 获取报名状态信息</h3>
+<blockquote>
+<ul>
+<li>URL：/</li>
+<li>json模拟文件地址:/ajax/getApplyStatus</li>
+<li>描述：获取当前用户的报名状态信息</li>
+</ul>
+</blockquote>
+<p><strong> 请求参数示例： </strong> <br />
+<pre><code class="javascript">{
+    &quot;type&quot; : &quot;getApplyStatus&quot;, // 请求
+    &quot;start&quot;:0,
+    &quot;limit&quot;:3
+}
+</code></pre></p>
+<p><strong> 响应结果示例： </strong> <br />
+<pre><code class="javascript">{
+    &quot;version&quot;: 0,
+    &quot;result&quot;: true,
+    &quot;message&quot;: &quot;这是提示或异常信息&quot;,
+    &quot;error&quot;: &quot;B&quot;,
+    &quot;total&quot;: 0,
+    &quot;data&quot;: {
+        &quot;name&quot; : &quot;林丹丹&quot;, // 用户姓名
+        &quot;number&quot; : &quot;3242344&quot;, // 用户编号
+        &quot;picture&quot; : &quot;images/photos.png&quot;, // 用户头像
+        &quot;signup&quot; : [{
+            &quot;id&quot; : 1234321, // 报名班级id
+            &quot;title&quot; : &quot;解决方案重装旅-FBB&quot;, // 报名班级名称
+            &quot;date&quot; : &quot;02月28日&quot;, // 报名时间
+            &quot;timestamp&quot; : &quot;201603240101&quot;, // 报名时间详细信息
+            &quot;status&quot; : {
+                &quot;type&quot; : 0, // 报名状态类型 (待商定)
+                &quot;name&quot; : &quot;申请成功&quot;, // 报名类型名称
+                &quot;discript&quot; : &quot;&quot; // 报名状态说明
+            },
+            &quot;step&quot; : {
+                &quot;type&quot; :  2,    // 报名进度信息
+                &quot;discript&quot; : &quot;2月29日 19：31 已发送邮件通知主管&quot;  // 报名进度进度说明
+            }
+        },{
+            &quot;id&quot; : 1234321,
+            &quot;title&quot; : &quot;解决方案重装旅-FBB&quot;,
+            &quot;date&quot; : &quot;02月28日&quot;,
+            &quot;timestamp&quot; : &quot;201603240101&quot;,
+            &quot;status&quot; : {
+                &quot;type&quot; : 1,
+                &quot;name&quot; : &quot;审批中&quot;,
+                &quot;discript&quot; : &quot;&quot;
+            },
+            &quot;step&quot; : {
+                &quot;type&quot; :  3,    
+                &quot;discript&quot; : &quot;1月4日 15：11 主管审批中&quot;
+            }
+
+        }]
+    }
+}
+</code></pre></p>
+<h3 id="34"><a name="user-content-34" href="#34" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>3.4 报名须知</h3>
+<blockquote>
+<ul>
+<li>URL：/</li>
+<li>json模拟文件地址:/ajax/getApplyNotice</li>
+<li>描述：用户报名帮助信息</li>
+</ul>
+</blockquote>
+<p><strong> 请求参数示例： </strong> <br />
+<pre><code class="javascript">{
+    &quot;type&quot; : &quot;getApplyNotice&quot;, // 请求
+}
+</code></pre></p>
+<p><strong> 响应结果示例： </strong> <br />
+<pre><code class="javascript">{
+    &quot;version&quot;: 0,
+    &quot;result&quot;: true,
+    &quot;message&quot;: &quot;这是提示或异常信息&quot;,
+    &quot;error&quot;: &quot;B&quot;,
+    &quot;total&quot;: 0,
+    &quot;data&quot;: {
+        &quot;discipline&quot; : &quot;一、学生必须准时上下课，不得迟到和早退。 上课期间禁止传呼机和手机鸣叫，不得受理 传呼和手机。迟到学生需取得教师同意后方 准就&quot;,  // 报名纪律
+        &quot;position&quot; : &quot;阿尔巴尼亚  以色列  美国  英国  深圳  广州葡萄牙  西班牙&quot;, //  培训教室位置
+        &quot;food&quot; : &quot;澜泰   日本料理    自助餐   Livy&quot;, //   周边餐饮
+        &quot;travel&quot; : &quot;链接：&lt;a href=\&quot;#\&quot;&gt;w3huawei.etraval.com&lt;/a&gt;&quot;, // 机票预定
+        &quot;visa&quot; : &quot;&quot; // 签证进度
+    }
+}
+
+</code></pre></p>
+<h3 id="35"><a name="user-content-35" href="#35" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>3.5 最新班级信息</h3>
+<blockquote>
+<ul>
+<li>URL：/</li>
+<li>json模拟文件地址:/ajax/getNewest</li>
+<li>描述：获取最新班级信息列表</li>
+</ul>
+</blockquote>
+<p><strong> 请求参数示例： </strong> <br />
+<pre><code class="javascript">{
+    &quot;type&quot; : &quot;getNewest&quot;, // 请求
+    &quot;start&quot;:0,
+    &quot;limit&quot;:3
+}
+</code></pre></p>
+<p><strong> 响应结果示例： </strong> <br />
+<pre><code class="javascript">{
+    &quot;version&quot;: 0,
+    &quot;result&quot;: true,
+    &quot;message&quot;: &quot;这是提示或异常信息&quot;,
+    &quot;error&quot;: &quot;B&quot;,
+    &quot;total&quot;: 0,
+    &quot;data&quot;: [{
+        &quot;id&quot; : 123454321, //最新班级id 
+        &quot;url&quot; : &quot;#&quot;,  // 点击链接地址
+        &quot;picture&quot; :  &quot;images/change.png&quot;, // 班级图片
+        &quot;title&quot; : &quot;变革战略预备队-阿甘班&quot; // 班级名称
+    },{
+        &quot;id&quot; : 123454321,
+        &quot;url&quot; : &quot;#&quot;, 
+        &quot;picture&quot; : &quot;images/reserve.png&quot;,
+        &quot;title&quot; : &quot;干部部长战略预备队—讲师训&quot;
+    }]
+}
+</code></pre></p>
+<h3 id="36"><a name="user-content-36" href="#36" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>3.6 最热门班级列表</h3>
+<blockquote>
+<ul>
+<li>URL：/</li>
+<li>json模拟文件地址:/ajax/getPopular</li>
+<li>描述：获取最热门班级列表</li>
+</ul>
+</blockquote>
+<p><strong> 请求参数示例： </strong> <br />
+<pre><code class="javascript">{
+    &quot;type&quot; : &quot;getPopular&quot;, // 请求
+    &quot;start&quot;:0,
+    &quot;limit&quot;:3
+}
+</code></pre></p>
+<p><strong> 响应结果示例： </strong> <br />
+<pre><code class="javascript">{
+    &quot;version&quot;: 0,
+    &quot;result&quot;: true,
+    &quot;message&quot;: &quot;这是提示或异常信息&quot;,
+    &quot;error&quot;: &quot;B&quot;,
+    &quot;total&quot;: 0,
+    &quot;data&quot;: [{
+        &quot;id&quot; : 123454321, //班级id 
+        &quot;url&quot; : &quot;#&quot;,  // 点击链接地址
+        &quot;picture&quot; :  &quot;images/change.png&quot;, // 班级图片
+        &quot;title&quot; : &quot;销售项目经理资源池—复盘班&quot; // 班级名称
+    },{
+        &quot;id&quot; : 123454321,
+        &quot;url&quot; : &quot;#&quot;, 
+        &quot;picture&quot; : &quot;images/reserve.png&quot;,
+        &quot;title&quot; : &quot;监管重装旅-机关班&quot;
+    }]
+}
+</code></pre></p></article></body></html>

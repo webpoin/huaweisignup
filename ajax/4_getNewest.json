@@ -1,0 +1,73 @@
+﻿{
+    "sysDate": "2016-04-20 19:58:13",
+    "totalCount": 5,
+    "msg": "操作成功",
+    "status": 1,
+    "data": [
+        {
+            "subProjectCode": "800250401",
+            "projectId": "62",
+            "trainingTime": 2,
+            "picUrl": "imageURL",
+            "subProjectName": "解决方案重装旅-企业ICT(中文)",
+            "targetMember": "解决方案经理",
+            "price": 500,
+            "surplusPlaces": 0,
+            "subProjectId": "126",
+            "bigPicUrl": "imageURL",
+            "projectName": "战略预备队-解决方案重装旅"
+        },
+        {
+            "subProjectCode": "800250402",
+            "projectId": "62",
+            "trainingTime": 10,
+            "picUrl": "imageURL",
+            "subProjectName": "解决方案重装旅-FBB(中文)",
+            "targetMember": "解决方案经理",
+            "price": 500,
+            "surplusPlaces": 0,
+            "subProjectId": "127",
+            "bigPicUrl": "imageURL",
+            "projectName": "战略预备队-解决方案重装旅"
+        },
+        {
+            "subProjectCode": "800250403",
+            "projectId": "62",
+            "trainingTime": 10,
+            "picUrl": "imageURL",
+            "subProjectName": "解决方案重装旅-大IT（中文）",
+            "targetMember": "解决方案经理",
+            "price": 500,
+            "surplusPlaces": 0,
+            "subProjectId": "128",
+            "bigPicUrl": "imageURL",
+            "projectName": "战略预备队-解决方案重装旅"
+        },
+        {
+            "subProjectCode": "800250404",
+            "projectId": "62",
+            "trainingTime": 12,
+            "picUrl": "imageURL",
+            "subProjectName": "解决方案重装旅-MBB（中文）",
+            "targetMember": "解决方案经理",
+            "price": 500,
+            "surplusPlaces": 0,
+            "subProjectId": "129",
+            "bigPicUrl": "imageURL",
+            "projectName": "战略预备队-解决方案重装旅"
+        },
+        {
+            "subProjectCode": "800250405",
+            "projectId": "62",
+            "trainingTime": 10,
+            "picUrl": "imageURL",
+            "subProjectName": "解决方案重装旅-MBB（英文）",
+            "targetMember": "解决方案经理",
+            "price": 500,
+            "surplusPlaces": 0,
+            "subProjectId": "130",
+            "bigPicUrl": "imageURL",
+            "projectName": "战略预备队-解决方案重装旅"
+        }
+    ]
+}

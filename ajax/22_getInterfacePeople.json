@@ -1,0 +1,9 @@
+{
+	"status": 1,
+	"sysDate": "2016-4-12 14:40:55",
+	"totalCount": 2,
+	"data": [{
+		"employeeNumber": "111",
+		"userName":"李明",
+	}]
+}

@@ -1,0 +1,82 @@
+
+	    <div class="opinion_conten">
+	    	<div class="opinion_center">
+
+	    		<h2>
+	    			<strong><img src="images/back.png" alt="">返回</strong>
+
+	    			培训报名
+	    			<img src="images/smallarrow.png" alt="">
+	    			主管审批
+	    			<img src="images/smallarrow.png" alt="">
+	    			<span>详情</span>
+	    		</h2>
+	    		
+
+	    		<div class="opinion_center_detai">
+	    			<h3>
+	    				<span>工号：00357700 </span>
+	    				<span>姓名：乔丹丹 </span>
+	    				<span>部门：学习交付与管理 </span>
+	    				<span>项目：变革战略预备队 </span>
+	    				<span>学习方案：詹天佑班 </span>
+	    				<span>班级编码：20160623674 </span>
+	    			</h3>
+
+
+	    			<ul>
+	    				<li>
+	    					<strong>学习方案介绍：</strong>
+	    					<p>统一变革思想，使xPC掌握变革与流程管理、业务流程运营、内控与风险管理的方法，确保其在变革实践中的灵活运用支撑变革在一线的有效落地。以xPC的角色活运用，支撑变革在一线的有效落地。以xPC的角色 </p>
+	    				</li>
+	    				<li>
+	    					<strong>培训结束时间：</strong>
+	    					<p>2016/04/22</p>
+	    				</li>
+	    				<li>
+	    					<strong>培训开始时间：</strong>
+	    					<p>2016/03/22</p>
+	    				</li>
+	    				<li>
+	    					<strong>培训费用：</strong>
+	    					<p>RMB  998</p>
+	    				</li>
+	    			</ul>
+
+	    		</div>
+	    		<div class="opinion_center_observation">
+	    			<h3>审批意见</h3>
+	    			<dl>
+	    				<dt><a href="#"><img src="images/hook1.png" alt=""></a></dt>
+	    				<dd>选项一：  统一变革思想，使xPC掌握变革与流程管理、业务流程运营、统一变革思想，使xPC掌握变革与流程管理、业务流程运营</dd>
+	    			</dl>
+	    			<dl>
+	    				<dt class="select"><a href="#"><img src="images/hook2.png" alt=""></a></dt>
+	    				<dd>选项二：  统一变革思想，使xPC掌握变革与流程管理、业务流程运营、业务流程运营、</dd>
+	    			</dl>
+	    			<dl>
+	    				<dt><a href="#"><img src="images/hook1.png" alt=""></a></dt>
+	    				<dd>选项三：  统一变革思想，使xPC掌握变革与流程管理、业务流程运营、</dd>
+	    			</dl>
+	    			<dl>
+	    				<dt><a href="#"><img src="images/hook1.png" alt=""></a></dt>
+	    				<dd>选项四：  统一变革思想，使xPC掌握变革与流程管理、业务流程运营、</dd>
+	    			</dl>
+
+					<h6>
+						<a ng-click="openDialog()"><span>驳回</span></a>
+						<a href="#"><span class="select">审批通过</span></a>
+					</h6>
+	    		</div>
+	    	</div>
+	    </div>
+	    <div class="opinion_popup" style="display: {{ dialog? 'block' : 'none'}};">
+			<h2>驳回原因</h2>
+			<div class="opinion_popup_text">
+				<textarea placeholder=""></textarea>
+			</div>
+			<h6>
+				<a ng-click="closeDialog()"><span>取消</span></a>
+				<a ng-click="closeDialog()"><span class="orange">确定</span></a>
+			</h6>
+		</div>

@@ -1,0 +1,9 @@
+[{
+    "id":2,
+    "text":"Meeting",
+    "start_date":"04/11/2013 14:00", 
+    "end_date":"04/11/2013 17:00",
+    "room":327,
+    "holder":"James",
+    "section_id" : 1
+}]

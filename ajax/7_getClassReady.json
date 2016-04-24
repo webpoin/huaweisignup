@@ -1,0 +1,69 @@
+{
+    "sysDate": "2016-04-20 21:00:26",
+    "totalCount": 5,
+    "status": 1,
+    "data": [
+        {
+            "classId": 4147,
+            "classCode": "201508010275",
+            "subProjectCode" : "32246665464",
+            "subProjectName": "变革战略预备队", 
+            "trainingArea": "10",
+            "trainingAddress": "mtstest",
+			"enrollStatus" : 0,
+			"classBeginTime" : "2016-03-01 10:00"
+
+        },
+        {
+            "classId": 1578,
+            "classCode": "201509100320",
+            "subProjectCode" : "32246665464",
+            "subProjectName" : "变革战略预备队", 
+            "trainingArea": "1",
+            "trainingAddress": "J20",
+			"enrollStatus" : 1,
+			"classBeginTime" : "2016-03-01 10:00"
+        },
+        {
+            "classId": 1703,
+            "classCode": "201509240352",
+            "subProjectCode" : "32246665464",
+            "subProjectName" : "变革战略预备队", 
+            "trainingArea": "1",
+            "trainingAddress": "10",
+			"enrollStatus" : 2,
+			"classBeginTime" : "2016-03-01 10:00"
+        },
+        {
+            "classId": 1703,
+            "classCode": "201509240352",
+            "subProjectCode" : "32246665464",
+            "subProjectName" : "变革战略预备队",  
+            "trainingArea": "1",
+            "trainingAddress": "10",
+			"enrollStatus" : 3,
+			"classBeginTime" : "2016-03-01 10:00"
+        },
+        {
+            "classId": 1703,
+            "classCode": "201509240352",
+            "subProjectCode" : "32246665464",
+            "subProjectName" : "变革战略预备队", 
+            "trainingArea": "1",
+            "trainingAddress": "10",
+			"enrollStatus" : 4,
+			"classBeginTime" : "2016-03-01 10:00"
+        },
+        {
+            "classId": 1703,
+            "classCode": "201509240352",
+            "subProjectCode" : "32246665464",
+            "subProjectName" : "变革战略预备队", 
+            "trainingArea": "1",
+            "trainingAddress": "10",
+            "enrollStatus" : 5,
+            "classBeginTime" : "2016-03-01 10:00"
+        }
+    ],
+    "msg": "success"
+}

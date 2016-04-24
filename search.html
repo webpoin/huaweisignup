@@ -1,0 +1,84 @@
+	    
+
+		<div class="search" ng-controller="SearchCtrl">
+			<div class="search_center">
+				<form ng-submit="search()" method="get" class="search_center_box"> 
+				<input type="text" placeholder="{{'header_nav_project' | translate}}" class="search_center_sipt"  ng-model="person.keyword" />
+				<button type="submit"class="search_center_sbtn"><img src="images/search.png" alt=""></button> 
+			</form>
+			
+		</div>
+		</div>
+
+
+	<div class="filter">
+
+		<dl ng-repeat="item in filter track by $index">
+			<dt>{{item.title}}</dt>
+			<dd><a ng-repeat="item2 in item.links track by $index" ng-click="select(item2)" ng-class="{'active':item2 == person.keyword}">{{item2}}</a></dd>
+		</dl>
+ 		
+	</div>
+    <div class="filter_result">
+    	<h2>
+    		<strong>搜索结果</strong>
+    		<span>
+    			<a ng-click="paginationConf.currentPage = paginationConf.currentPage - 1"><img src="images/leftarrow.png" alt=""></a>
+    			<em>{{paginationConf.currentPage}}</em>
+    			/{{totalPage}}
+    			<a ng-click="paginationConf.currentPage = paginationConf.currentPage + 1"><img src="images/rightarrow.png" alt=""></a>
+    		</span>
+    	</h2>
+		<div class="conten_left" style="height: auto;">
+
+			<dl>
+				<dt ng-repeat="item in list track by $index" ng-click="detail(item)">
+					<strong><a ng-bind="'module_select_signup' | translate ">我要报名</a></strong>
+					<div class="conten_left_img"><img ng-src="{{item.picUrl}}" alt=""></div>
+					<div class="conten_left_introduction" >
+						<h3>{{item.projectName}}<span>—— {{item.subProjectName}}</span></h3>
+						<p><span>{{'module_select_discript' | translate }}： </span>{{item.subProjectBrief}}</p>
+							<ul>
+								<li>
+									<img src="images/time.png" alt="">
+									<span>{{'module_select_duration' | translate }}：</span>
+									{{item.trainingTime}}
+								</li>
+								<li>
+									<img src="images/time.png" alt="">
+									<span>{{'module_select_start' | translate }}：</span>
+									{{item.beginDate}} 
+								</li>
+								<li>
+									<img src="images/number.png" alt="">
+									<span>{{'module_select_places' | translate }}：<em>{{item.surplusPlaces}}</em></span>
+								</li>
+								<li>
+									<img src="images/place.png" alt="">
+									<span>{{'module_select_location' | translate }}：</span>
+									{{item.trainingArea}}
+								</li>
+								<li>
+									<img src="images/rmb.png" alt="">
+									<span>{{'module_select_price' | translate }}：</span>
+									{{item.price}}
+								</li>
+								<li>
+									<img src="images/wallet.png" alt="">
+									<span>{{'module_select_payway' | translate }}：</span>
+									{{item.payway}}
+								</li>
+							</ul>
+						</div>
+				</dt>
+			</dl>
+		</div>
+    </div>
+
+    <div class="filter_page">
+    	<tm-pagination conf="paginationConf"></tm-pagination>
+    </div>
+
+	
+	
+

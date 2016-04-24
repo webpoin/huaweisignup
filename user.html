@@ -1,0 +1,89 @@
+
+	<div class="progress_conten">
+		<div class="progress_center">
+			<p>培训报名<img src="images/smallarrow.png" alt=""><span>我的报名</span></p>
+			<div class="progress_left">
+				<h2>我的报名</h2>
+				<ul>
+					<li ng-repeat="item in sidebar track by $index" class="status_{{item.enrollStatus}}" ng-class="{select:item.select}" ng-click="select(item)">
+						<h3><small>{{item.classCode}}</small><strong>{{item.subProjectName}}</strong></h3>
+						<p>培训开始时间：{{item.classBeginTime}}<br>培训地区部：{{item.trainingAddress}}</p>
+						<h6><img src="images/hook2.png" alt="">{{'已取消,已报名,待审批,过期,已驳回,已候补'.split(',')[item.enrollStatus]}}</h6>
+					</li>
+
+				</ul>
+			</div>
+
+
+			<div class="progress_right">
+				<h3>名称：{{detail.subProjectName}}<span>班级编码： {{detail.classCode}}</span></h3>
+
+
+
+				<div class="progress_right_schedule">
+					<p><i></i>报名进度</p>
+					<div class="conten_right_step" >
+						<cite>
+							<strong ng-repeat="item in active.classStatus track by $index">
+								<span ng-class="{gray: item.enrollStatus>active.curEnrollSchedule}"><em>{{item.name}}</em></span>
+								<b ng-class="{gray: item.enrollStatus>=active.curEnrollSchedule}" ng-hide="$last"></b>
+							</strong>
+						</cite>
+
+						<a href="#" ng-show="{{active.curEnrollStatus == 1 ||active.curEnrollStatus == 2 }}">取消报名</a>
+						<a href="#" ng-show="{{active.curEnrollStatus == 5}}">取消候补</a>
+
+
+					</div>
+
+				</div>
+				<dl>
+					<dt><p><i></i>课程/班级信息</p></dt>
+					<dd>
+						<p><span>学习方案简介：</span> {{subProjectInfo}}</p>
+
+						<ul>
+							<li>
+								<span>{{'module_select_duration' | translate }}：</span>
+								{{detail.trainingTime}}
+							</li>
+							<li>
+								<span>{{'module_select_start' | translate }}：</span>
+								{{detail.beginDate}} 
+							</li>
+							<li>
+								<span>{{'module_select_places' | translate }}：<em>{{detail.surplusPlaces}}</em></span>
+							</li>
+							<li>
+								<span>{{'module_select_location' | translate }}：</span>
+								{{detail.trainingArea}}
+							</li>
+							<li>
+								<span>{{'module_select_price' | translate }}：</span>
+								{{detail.price}}
+							</li>
+							<li>
+								<span>{{'module_select_payway' | translate }}：</span>
+								{{detail.payway}}
+							</li>
+						</ul>
+
+					</dd>
+				</dl>
+				<div class="progress_right_classmate">
+					<p><i></i>我的同学<span>已报名：{{classmate.enrollNum}}<em>/{{classmate.enrollMax}}</em></span></p>
+					<div class="progress_right_classmatehead">
+						<!-- <em><a href="#">展开更多</a></em> -->
+						<ul>
+							<li ng-repeat="item in classmate.classMates track by $index">
+								<img ng-src="{{item.picUrl}}" alt="">
+								<strong>{{item.memberName}}</strong>
+								<span>{{item.memberCode}}</span>
+								<span>{{item.deptName}}</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>

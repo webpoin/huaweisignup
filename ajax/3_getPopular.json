@@ -1,0 +1,73 @@
+﻿{
+    "sysDate": "2016-04-20 19:57:59",
+    "totalCount": 5,
+    "msg": "操作成功",
+    "status": 1,
+    "data": [
+        {
+            "subProjectCode": "5901114-003",
+            "projectId": "1521",
+            "trainingTime": 2,
+            "picUrl": "imageURL",
+            "subProjectName": "(子)南京一般服务项目003",
+            "targetMember": "200",
+            "price": 500,
+            "surplusPlaces": 0,
+            "subProjectId": "2601",
+            "bigPicUrl": "imageURL",
+            "projectName": "南京一般服务项目"
+        },
+        {
+            "subProjectCode": "5901114-004",
+            "projectId": "1521",
+            "trainingTime": 2,
+            "picUrl": "imageURL",
+            "subProjectName": "(子)南京一般服务项目004",
+            "targetMember": "100",
+            "price": 500,
+            "surplusPlaces": 0,
+            "subProjectId": "2821",
+            "bigPicUrl": "imageURL",
+            "projectName": "南京一般服务项目"
+        },
+        {
+            "subProjectCode": "5901114-005",
+            "projectId": "1521",
+            "trainingTime": 1,
+            "picUrl": "imageURL",
+            "subProjectName": "南京一般服务项目005",
+            "targetMember": "20",
+            "price": 500,
+            "surplusPlaces": 0,
+            "subProjectId": "2961",
+            "bigPicUrl": "imageURL",
+            "projectName": "南京一般服务项目"
+        },
+        {
+            "subProjectCode": "5901114-006",
+            "projectId": "1521",
+            "trainingTime": 1,
+            "picUrl": "imageURL",
+            "subProjectName": "南京一般服务项目006",
+            "targetMember": "10",
+            "price": 500,
+            "surplusPlaces": 0,
+            "subProjectId": "2962",
+            "bigPicUrl": "imageURL",
+            "projectName": "南京一般服务项目"
+        },
+        {
+            "subProjectCode": "5901114-007",
+            "projectId": "1521",
+            "trainingTime": 1,
+            "picUrl": "imageURL",
+            "subProjectName": "南京一般服务项目007",
+            "targetMember": "20",
+            "price": 500,
+            "surplusPlaces": 0,
+            "subProjectId": "2963",
+            "bigPicUrl": "imageURL",
+            "projectName": "南京一般服务项目"
+        }
+    ]
+}

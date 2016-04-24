@@ -1,0 +1,36 @@
+{
+    "sysDate": "2016-04-20 20:48:57",
+    "totalCount": 2,
+    "status": 1,
+    "data": [
+        {
+            "deptName": "025769/尼日利亚人力资源部",
+            "scope": "ilearning",
+            "auditId": 992,
+            "subProjectName": "谭春燕南京一般服务项目010/5901114-010",
+            "appName": "huPortal",
+            "trainStartDate": "2016-05-01 14:39:00",
+            "trainEndDate": "2016-05-02 14:39:00",
+            "currentUserId": 641523833996290,
+            "classCode": 201605010628,
+            "memberName": "米庆成",
+            "projectName": "GTS国家交付副代表角色认知",
+            "memberCode": 44994
+        },
+        {
+            "deptName": "024921/华大教育学院学习项目交付支持部",
+            "scope": "ilearning",
+            "auditId": 943,
+            "subProjectName": "华大手机报名转审测试",
+            "appName": "huPortal",
+            "trainStartDate": "2016-02-25 17:41:00",
+            "trainEndDate": "2016-03-31 17:41:00",
+            "currentUserId": 641523833996290,
+            "classCode": 201602250127,
+            "memberName": "王伟东",
+            "projectName": "市场青训班（战略预备队）",
+            "memberCode": 44953
+        }
+    ],
+    "msg": "OK"
+}

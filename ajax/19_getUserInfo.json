@@ -1,0 +1,17 @@
+﻿{
+    "sysDate": "2016-04-20 19:35:42",
+    "totalCount": 1,
+    "status": 1,
+    "data": [
+        {
+            "picUrl": "http://w3.huawei.com/w3lab/rest/yellowpage/face/00188678/120",
+            "userId": "641523833996290",
+            "userName": "王伟东",
+            "departmentId": "625660",
+            "departmentCode": "024921",
+            "employeeNumber": "00188678",
+            "departmentName": "华大教育学院学习项目交付支持部"
+        }
+    ],
+    "msg": "OK"
+}

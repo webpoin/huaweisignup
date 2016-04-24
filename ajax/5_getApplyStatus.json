@@ -1,0 +1,59 @@
+{
+    "sysDate": "2016-04-22 15:20:56",
+    "status": 1,
+    "totalCount": 2,
+    "data": [
+    {
+        "classId": 643,
+        "classStatus": [{
+            "name": "提交报名",
+            "enrollStatus": 1,
+            "discript": ""
+        }, {
+            "name": "审批中",
+            "enrollStatus": 2,
+            "discript": "trewqtrewqwrtyytrewfgfd"
+        }, {
+            "name": "报名成功",
+            "enrollStatus": 3,
+            "discript": null
+        }],
+        "curEnrollStatus": 3,
+        "curEnrollSchedule": 2
+    }, 
+    {
+        "classId": 4147,
+        "classStatus": [{
+            "name": "提交报名",
+            "enrollStatus": 1,
+            "discript": ""
+        }, {
+            "name": "审批中",
+            "enrollStatus": 2,
+            "discript": "trewqtrewqwrtyytrewfgfd"
+        }, {
+            "name": "报名成功",
+            "enrollStatus": 3,
+            "discript": null
+        }],
+        "curEnrollStatus": 2,
+        "curEnrollSchedule": 2
+    }, {
+        "classId": 4318,
+        "classStatus": [{
+            "name": "提交报名",
+            "enrollStatus": 1,
+            "discript": null
+        }, {
+            "name": "审批中",
+            "enrollStatus": 2,
+            "discript": null
+        }, {
+            "name": "报名成功",
+            "enrollStatus": 3,
+            "discript": null
+        }],
+        "curEnrollStatus": 1,
+        "curEnrollSchedule": 3
+    }]
+}

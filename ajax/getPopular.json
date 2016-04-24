@@ -1,0 +1,14 @@
+{
+	"version": 0,
+	"result": true,
+	"message": "这是提示或异常信息",
+	"error": "B",
+	"total": 0,
+	"data": [
+		{"id": 124543,"url": "", "picture": "images/replay.png", "title": "销售项目经理资源池—复盘班"},
+		{"id": 124543,"url": "", "picture": "images/organ.png", "title": "监管重装旅-机关班"},
+		{"id": 124543,"url": "", "picture": "images/reinstall.png", "title": "干部部长战略预备队—讲师训"},
+		{"id": 124543,"url": "", "picture": "images/resource.png", "title": "项目管理资源池-讲师训"},
+		{"id": 124543,"url": "", "picture": "images/gen.jpg", "title": "销售项目经理资源池-讲师班"}
+	]
+}

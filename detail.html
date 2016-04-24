@@ -1,0 +1,161 @@
+	<div class="detail_search">
+		<div class="detail_search_center">
+			<p>
+				开班计划
+				<img src="images/bluearrow.png" alt=""> {{class.projectName}}
+				<img src="images/bluearrow.png" alt=""><span>{{class.subProjectName}}</span>
+			</p>
+			<div class="search_center" ng-controller="SearchCtrl">
+				<form ng-submit="searchSubmit()" method="get" class="search_center_box"> 
+					<input type="text" placeholder="{{'header_nav_project' | translate}}" class="search_center_sipt" ng-model="keyword"/> 
+					<button type="submit"class="search_center_sbtn"><img src="images/search.png" alt=""></button> 
+				</form>
+			</div>
+			<div class="detail_search_video">
+				<img class="video" ng-src="{{class.bigPicUrl}}" width="616">
+				<h3>{{class.projectName}} —— {{class.subProjectName}}</h3>
+				<dl>
+					<dt><span>培训时长：</span><em>{{class.trainingTime}} 天</em></dt>
+					<dt><span>目标学员：</span>{{class.targetMember}}</dt>
+					<!-- <dd><span>接口人：</span>乔丹丹</dd>
+					<dd><span>部门：</span>华大教育学院</dd>
+					<dd><span>工号：</span>00735500</dd> -->
+				</dl>
+			</div>
+		</div>
+	</div>
+	<div style="clear: both;"></div>
+	<div class="detail_conten">
+	
+		<div class="detail_conten_center">
+			<h2><i></i>方案介绍</h2>
+			<div class="detail_center_introduction" >
+				<p>
+					<i></i>
+					<span>方案介绍：</span>
+					{{class.subProjectBrief}}
+				</p>
+				
+
+			</div>
+
+			<div id="scheduler_here" class="dhx_cal_container">
+				<h3><i></i><span>培训课表</span></h3>
+				<div class="dhx_cal_navline">
+					<div class="dhx_cal_prev_button">&nbsp;</div>
+					<div class="dhx_cal_next_button">&nbsp;</div>
+					<!-- <div class="dhx_cal_today_button"></div> -->
+					<div class="dhx_cal_date" style="display: none;"></div>
+<!-- 					<div class="dhx_cal_tab" name="day_tab" style="right:204px;"></div>
+					<div class="dhx_cal_tab" name="week_tab" style="right:140px;"></div>
+					<div class="dhx_cal_tab" name="unit_tab" style="right:280px;"></div>
+					<div class="dhx_cal_tab" name="month_tab" style="right:76px;"></div> -->
+				</div>
+				<div class="dhx_cal_header">
+				</div>
+				<div class="dhx_cal_data">
+				</div>		
+			</div>
+			
+
+		</div>
+		<div class="detail_conten_arrange">
+			<h2><i></i>全年安排</h2>
+
+
+
+			<!-- 接口16获得
+				报名时间
+			接口5获得
+				报名状态 -->
+
+			{
+				"settlementway":"按人结算",
+				"subProjectCode":"800250404",
+				"endDate":"2015-07-31 09:57:00",
+				"classStatus":"草稿",
+				"beginDate":"2015-06-25 09:57:00",
+				"enrollNum":0,
+				"trainArea":"1",
+				"classId":"643",
+				"trainingArea":"深圳",
+				"candidateNum":0,
+				"price":0,
+				"subProjectId":"129",
+				"classCode":"2015062500",
+				"trainingAddress":"J1"
+			}
+
+			<div class="detail_conten_arrangetable">
+				<ul>
+					<li><a>全部</a></li>
+
+					<li ng-repeat="item in month track by $index" ng-class="{active:item.active}"><a ng-click="setMonth(item.val)">{{item.val}}月</a></li>
+				</ul>
+				<table>
+					<thead>
+						<tr>
+							<th>班级代码</th>
+							<th>开班时间</th>
+							<th>结束时间</th>
+							<th>上课地点</th>
+							<th>剩余/总数</th>
+							<th>报名截止日期</th>
+							<th>候补名额</th>
+							<th>已报名</th>
+							<th>报名状态</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat="item in arrange track by $index">
+							<td>{{item.classCode}}</td>
+							<td>{{item.beginDate}}</td>
+							<td>{{item.endDate}}</td>
+							<td>{{item.trainingAddress}}</td>
+							<td><span>{{item.totalNum - enrollNum}}</span>/{{item.totalNum}}</td>
+							<td><span>{{item.cutOffTime}}</span></td>
+							<td><em>{{item.candidateNum}}</em></td>
+							<td>{{item.enrollNum}}</td>
+							<td class="status_{{item.statusType}}" ng-click="openDialog(item)">{{item.statusName}}</td>
+						</tr>
+
+
+					</tbody>
+				</table>
+			</div>
+
+		</div>
+	</div>
+
+
+	<div class="detail_dialog" style="display: {{ showdialog? 'block' : 'none'}};">
+		<cite>
+			<h2>确认提交报名</h2>
+			<div>
+				<p><span>名   称 :</span>{{class.projectName}}——{{class.subProjectName}}</p>
+				<p><span>报名权签人:</span>Yao Wu /008888</p>
+				<p><span>班级编码 :</span>{{dialog.classCode}}</p>
+				<p><span>开班时间 :</span>{{dialog.beginDate}}</p>
+				<p><span>地       点 :</span>{{dialog.trainingAddress}}</p>
+				<p><span>培训须知:</span>您一旦报名成功，即要遵守学员管理制度，培训7天前取消照常扣费；培训期间内，如需请假，请向XXX请假，请假累计超过3次，此次培训无效。</p>
+			</div>
+			<h6>
+				<a ng-click="showdialog = false"><span>取消</span></a>
+				<a ng-click="signUp(dialog)"><span class="orange">确定</span></a>
+			</h6>
+		</cite>
+	</div>
+
+
+
+
+
+
+
+
+
+	
+
+
+
+

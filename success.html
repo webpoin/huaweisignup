@@ -1,0 +1,97 @@
+<div class="detail_search">
+	<div class="detail_search_center">
+		<p>培训报名<img src="images/bluearrow.png" alt=""><span>申请候补</span></p>
+        <div style="clear: both;"></div>
+        <div class="detail_search_prompt">
+            <h2>
+                <img src="images/success.png" alt="">
+                <strong>提交成功！</strong>
+                <p>
+                    <em>{{user.userName}}（{{user.employeeNumber}}）</em>
+                    您申请的
+                    <em>“{{detail.subProjectName}}”</em>
+                    已经提交您可以在
+                    <em><a href="#/user">”我的报名“</a></em>
+                    查看申请进度及课程信息。
+                </p>
+                <span class="back"><a href="javascript:history.go(-1)">返回</a></span>
+            </h2>
+        </div>
+	</div>
+</div>
+
+<div class="submitsuccess_conten">
+
+    <div class="progress_right">
+
+        <div class="progress_right_schedule">
+            <p><i></i>报名进度</p>
+            <div class="conten_right_step" >
+                <cite>
+                    <strong>
+                        <span><em>提交报名</em></span>
+                        <b class="gray" ></b>
+                        <span class="gray"><em>审批通过</em></span>
+                        <b class="gray" ></b>
+                        <span class="gray"><em>提交成功</em></span>
+                    </strong>
+                </cite>
+            </div>
+
+        </div>
+
+
+
+        <dl>
+            <dt><p><i></i>课程/班级信息</p></dt>
+            <dd>
+                <p><span>学习方案简介：</span> {{detail.subProjectInfo}}</p>
+
+                <ul>
+                    <li>
+                        <span>{{'module_select_duration' | translate }}：</span>
+                        {{detail.trainingTime}}
+                    </li>
+                    <li>
+                        <span>{{'module_select_start' | translate }}：</span>
+                        {{detail.beginDate}} 
+                    </li>
+                    <li>
+                        <span>{{'module_select_places' | translate }}：<em>{{detail.surplusPlaces}}</em></span>
+                    </li>
+                    <li>
+                        <span>{{'module_select_location' | translate }}：</span>
+                        {{detail.trainingArea}}
+                    </li>
+                    <li>
+                        <span>{{'module_select_price' | translate }}：</span>
+                        {{detail.price}}
+                    </li>
+                    <li>
+                        <span>{{'module_select_payway' | translate }}：</span>
+                        {{detail.payway}}
+                    </li>
+                </ul>
+
+            </dd>
+        </dl>
+        <div class="progress_right_classmate">
+            <p><i></i>我的同学<span>已报名：{{classmate.enrollNum}}<em>/{{classmate.enrollMax}}</em></span></p>
+            <div class="progress_right_classmatehead">
+                <!-- <em><a href="#">展开更多</a></em> -->
+                <ul>
+                    <li ng-repeat="item in classmate.classMates track by $index">
+                        <img ng-src="{{item.picUrl}}" alt="">
+                        <strong>{{item.memberName}}</strong>
+                        <span>{{item.memberCode}}</span>
+                        <span>{{item.deptName}}</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    
+</div>
+

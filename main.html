@@ -1,0 +1,153 @@
+
+
+
+
+	<div class="search" ng-controller="SearchCtrl">
+		<div class="search_center">
+				<form ng-submit="searchSubmit()" method="get" class="search_center_box"> 
+				<input type="text" placeholder="{{'header_nav_project' | translate}}" class="search_center_sipt" ng-model="keyword"/> 
+				<button type="submit"class="search_center_sbtn"><img src="images/search.png" alt=""></button> 
+			</form>
+<!-- 			<ul>
+				<li><a ng-bind="'search_hotkey' | translate "></a> ：</li>
+				<li ng-repeat="item in popularSearches track by $index"><a ng-click="searchKey(item.name)" ng-bind="item.name"></a></li>
+			</ul> -->
+		</div>
+	</div>
+	<div class="conten">
+	 	<div class="conten_center">
+	 		<div class="conten_left" >
+	 			<h2>
+	 				<i></i>
+	 				<b ng-bind="'module_select' | translate "></b>
+	 				<a href="#/search"><span ng-bind="'module_more' | translate "></span></a>
+	 			</h2>
+
+	 			<dl>
+	 				<dt ng-repeat="item in chooseList track by $index" ng-click="detail(item)">
+		 				<strong><a ng-bind="'module_select_signup' | translate ">我要报名</a></strong>
+						<div class="conten_left_img"><img ng-src="{{item.picUrl}}" alt=""></div>
+						<div class="conten_left_introduction" >
+							<h3>{{item.projectName}}<span>—— {{item.subProjectName}}</span></h3>
+							<p><span>{{'module_select_discript' | translate }}： </span>{{item.subProjectBrief}}</p>
+		 					<ul>
+		 						<li>
+		 							<img src="images/time.png" alt="">
+		 							<span>{{'module_select_duration' | translate }}：</span>
+		 							{{item.trainingTime}}
+		 						</li>
+		 						<li>
+		 							<img src="images/time.png" alt="">
+		 							<span>{{'module_select_start' | translate }}：</span>
+		 							{{item.beginDate}} 
+		 						</li>
+		 						<li>
+		 							<img src="images/number.png" alt="">
+		 							<span>{{'module_select_places' | translate }}：<em>{{item.surplusPlaces}}</em></span>
+		 						</li>
+		 						<li>
+		 							<img src="images/place.png" alt="">
+		 							<span>{{'module_select_location' | translate }}：</span>
+		 							{{item.trainingArea}}
+		 						</li>
+		 						<li>
+		 							<img src="images/rmb.png" alt="">
+		 							<span>{{'module_select_price' | translate }}：</span>
+		 							{{item.price}}
+		 						</li>
+		 						<li>
+		 							<img src="images/wallet.png" alt="">
+		 							<span>{{'module_select_payway' | translate }}：</span>
+		 							{{item.payway}}
+		 						</li>
+		 					</ul>
+		 				</div>
+	 				</dt>
+	 			</dl>
+	 		</div>
+
+		 	<div class="conten_right1" >
+		 		<div class="conten_right1_blue">
+		 			<a href="#/user"><img ng-src="{{user.picUrl}}" alt="">{{user.userName}} {{user.employeeNumber}}</a>
+		 			<span><a ng-bind="'module_more' | translate " href="#/user"><span></span></a></span>
+		 		</div>
+		 				
+
+		 		<div class="conten_right1_status">
+		 			<h3 ng-bind="'module_signup_status' | translate "></h3>
+		 			<ul>
+						<li ng-repeat="item in user.list track by $index" class="status_{{item.enrollStatus}}">
+							<a href="#">
+								<i></i>
+								{{item.classBeginTime}}
+								<em>{{item.classCode}}</em>
+							</a>
+							<p>{{item.subProjectName}}</p>
+							<div class="conten_right1_step" >
+								<strong ng-repeat="item2 in item.classStatus track by $index">
+								<span ng-class="{gray: item2.enrollStatus>item.curEnrollSchedule,active:item2.enrollStatus == item.curEnrollSchedule && item.discript}"></span>
+								<b ng-class="{gray: item2.enrollStatus>=item.curEnrollSchedule}" ng-hide="$last"></b>
+								</strong>
+								<br>
+								<em ng-show="item.discript">{{item.discript}}</em>
+							</div>
+							<h6>
+								<img src="images/hook.png" alt="">
+								{{'已取消,已报名,待审批,已过期,已驳回,已候补'.split(',')[item.enrollStatus]}}
+							</h6>
+						</li>
+		 			</ul>
+		 			<div class="conten_right1_paperclip"><img src="images/paperclip.png" alt=""></div>
+		 		</div>
+		 	</div>
+		 	<div class="conten_right2" >
+		 		<div class="conten_right2_blue">
+		 			<span><a ng-bind="'module_signup' | translate " >报名须知</a></span>
+		 		</div>
+		 		<div class="conten_right2_art" html-string="noticeData">
+		 			
+		 		</div>
+		 		<div class="conten_right2_paperclip"><img src="images/paperclip.png" alt=""></div>
+		 	</div>
+		 </div>
+
+
+	</div>
+
+	<div class="conten">
+	 	 	
+ 	 	<div class="conten_newest" >
+ 		 	<div class="conten_newest_center">
+ 		 		<h2>
+ 		 			<i></i>
+ 		 			<b ng-bind="'module_news' | translate ">最新</b>
+ 		 		</h2>
+ 		 		<ul>
+ 		 			<li ng-repeat="item in newsList track by $index" ng-click="detail(item)">
+ 		 				<img ng-src="{{item.picUrl}}" alt="">
+ 		 				<p>{{item.subProjectName}}</p>
+ 		 			</li>
+ 		 		</ul>
+ 		 	</div>
+ 		</div>
+
+	</div>
+
+	<div class="conten">
+	 	 	
+ 	 	<div class="conten_popular" >
+ 		 	<div class="conten_popular_center">
+ 		 		<h2>
+ 		 			<i></i>
+ 		 			<b ng-bind="'module_host' | translate ">最热</b>
+ 		 		</h2>
+ 		 		<ul>
+ 		 			<li ng-repeat="item in popularList track by $index" ng-click="detail(item)">
+ 		 				<img ng-src="{{item.picUrl}}" alt="">
+ 		 				<p>{{item.subProjectName}}</p>
+ 		 			</li>
+ 		 		</ul>
+ 		 	</div>
+ 		</div>
+
+	</div>

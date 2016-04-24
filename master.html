@@ -1,0 +1,144 @@
+	    <div class="recording_conten">
+	    	<div class="recording_center">
+	    		<div class="opinion_center">
+		    		<h2>
+						<strong ng-show="showdetail" ng-click="showdetail = false;"><img src="images/back.png" >返回</strong>
+						培训报名
+						<img src="images/smallarrow.png" width="4">主管审批
+						<span ng-show="showdetail"><img src="images/smallarrow.png" width="4">详情</span>
+					</h2>
+				</div>
+
+
+	    		<div class="recording_center_left" >
+	    			<h2>
+    					<img class="headimg" ng-src="{{master.picUrl}}" alt="">
+	    				<p>{{master.userName}}<span>{{master.departmentCode}}</span></p>
+	    				<p>{{master.departmentName}}</p>
+	    			</h2>
+	    			<ul>
+	    				<li class="{{approved ? '' : 'approved'}}" ><a ng-click="changeApproved(false)"><img src="images/pending.png" alt="">待审批</a></li>
+	    				<li class="{{approved ? 'approved' : ''}}"><a ng-click="changeApproved(true)"><i></i><img src="images/approved .png" alt="">已审批</a></li>
+	    			</ul>
+	    			
+	    		</div>
+	    		<div class="recording_center_right">
+
+				<div class="recording_list" ng-hide="showdetail" >
+		    			<h3><img src="images/pendingff.png" alt="">{{approved ? '已审批' : '待审批'}}</h3>
+						<div class="table">
+							<table>
+								<thead>
+									<tr>
+										<th>工号</th>
+										<th>姓名</th>
+										<th>部门</th>
+										<th>项目</th>
+										<th>学习方案</th>
+										<th>班级代码</th>
+										<th>培训开始及结束时间</th>
+										<th>费用</th>
+										<th>{{approved ? '状态': '操作'}}</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr ng-repeat="item in list track by $index" >
+										<td class="number">{{item.memberCode}}</td>
+										<td>{{item.memberName}}</td>
+										<td>{{item.deptName}}</td>
+										<td>{{item.projectName}}</td>
+										<td>{{item.subProjectName}}</td>
+										<td class="number">{{item.classCode}}</td>
+										<td class="number">{{item.trainStartDate}}<br>{{item.trainEndDate }}</td>
+										<td class="number">{{item.price}}</td>
+										<td class="{{item.auditStatus}}">
+											<cite ng-show="approved">{{'审批状态,审批通过,驳回,已过期'.split(',')[item.auditStatus ? auditStatus - 1: 0]}}</cite>
+											<cite ng-show="!approved" ng-click="openDetail(item)">审核</cite>
+										</td>
+									</tr>
+
+								</tbody>	
+							</table>
+						</div>
+
+		    			<tm-pagination conf="paginationConf"></tm-pagination>
+					</div>
+
+
+					<div class="opinion_detail" ng-show="showdetail">
+						<div class="opinion_center_detai">
+
+						<tr ng-repeat="item in list track by $index" ng-click="openDetail(item)">
+							<td class="number">{{item.memberCode}}</td>
+							<td>{{item.memberName}}</td>
+							<td>{{item.deptName}}</td>
+							<td>{{item.projectName}}</td>
+							<td>{{item.subProjectName}}</td>
+							<td class="number">{{item.classCode}}</td>
+							<td class="number">{{item.trainDate}}</td>
+							<td class="number">{{item.price}}</td>
+							<td class="green">{{item.status}}</td>
+						</tr>
+
+
+							<h3>
+								<span>工号：{{detail.memberCode}} </span>
+								<span>姓名：{{detail.memberName}}</span>
+								<span>部门：{{detail.deptName}}</span>
+								<span>项目：{{detail.projectName}}</span>
+								<span>学习方案：{{detail.subProjectName}}</span>
+								<span>班级编码：{{detail.classCode}}</span>
+							</h3>
+
+							<ul>
+								<li>
+									<strong>学习方案介绍：</strong>
+									<p>{{detail.introduction}}</p>
+								</li>
+								<li>
+									<strong>培训结束时间：</strong>
+									<p>{{detail.endingTime}}</p>
+								</li>
+								<li>
+									<strong>培训开始时间：</strong>
+									<p>{{detail.startTime}}</p>
+								</li>
+								<li>
+									<strong>培训费用：</strong>
+									<p>{{detail.price}}</p>
+								</li>
+							</ul>
+
+						</div>
+						<div class="opinion_center_observation">
+							<h3>审批意见</h3>
+							<dl ng-repeat="item in detail.options track by $index" ng-click="select(item)">
+								<dt ng-class="{'select': item.select}"><img ng-src="images/hook2.png" ></dt>
+								<dd>选项{{'一二三四五六七八'.split('')[$index]}}：{{item.discript}}</dd>
+							</dl>
+
+
+							<h6>
+								<a ng-click="showdialog = true" ><span>驳回</span></a>
+								<a ng-click="pass(detail)"><span class="select">审批通过</span></a>
+							</h6>
+						</div>
+					</div>
+
+
+
+	    		</div>
+	    	</div>
+	    </div>
+
+
+		<div class="opinion_popup" style="display: {{ showdialog? 'block' : 'none'}};">
+			<h2>驳回原因</h2>
+			<div class="opinion_popup_text">
+				<textarea placeholder="" ng-model="rejectText"></textarea>
+			</div>
+			<h6>
+				<a ng-click="showdialog = false"><span>取消</span></a>
+				<a ng-click="reject(detail)"><span class="orange">确定</span></a>
+			</h6>
+		</div>

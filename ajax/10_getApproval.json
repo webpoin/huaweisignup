@@ -1,0 +1,38 @@
+{
+    "sysDate": "2016-04-20 20:48:57",
+    "totalCount": 2,
+    "status": 1,
+    "data": [
+        {
+            "deptName": "024921/华大教育学院学习项目交付支持部",
+            "scope": "ilearning",
+            "auditId": 981,
+            "subProjectName": "子项目接口测试项目",
+            "appName": "huPortal",
+            "auditStatus": 2,
+            "trainStartDate": "2016-03-01 10:18:00",
+            "trainEndDate": "2016-03-06 10:19:00",
+            "currentUserId": 641523833996290,
+            "classCode": 201603010037,
+            "memberName": "林振兴",
+            "projectName": "GTS国家交付副代表角色认知",
+            "memberCode": 44994
+        },
+        {
+            "deptName": "024921/华大教育学院学习项目交付支持部",
+            "scope": "ilearning",
+            "auditId": 963,
+            "subProjectName": "华大手机报名转审测试",
+            "appName": "huPortal",
+            "auditStatus": 2,
+            "trainStartDate": "2016-02-25 17:41:00",
+            "trainEndDate": "2016-03-31 17:41:00",
+            "currentUserId": 641523833996290,
+            "classCode": 201602250127,
+            "memberName": "王伟东",
+            "projectName": "市场青训班（战略预备队）",
+            "memberCode": 44953
+        }
+    ],
+    "msg": "OK"
+}

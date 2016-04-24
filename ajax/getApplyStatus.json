@@ -1,0 +1,57 @@
+{
+	"version": 0,
+	"result": true,
+	"message": "这是提示或异常信息",
+	"error": "B",
+	"total": 0,
+	"data": {
+		"name" : "林丹丹",
+		"number" : "3242344",
+		"picture" : "images/photos.png",
+		"signup" : [{
+			"id" : 1234321,
+			"title" : "解决方案重装旅-FBB",
+			"date" : "02月28日",
+			"timestamp" : "201603240101",
+			"status" : {
+				"type" : 0,
+				"name" : "申请成功",
+				"discript" : ""
+			},
+			"step" : {
+				"type" :  2,	
+				"discript" : "2月29日 19：31 已发送邮件通知主管"
+			}
+		},{
+			"id" : 1234321,
+			"title" : "解决方案重装旅-FBB",
+			"date" : "02月28日",
+			"timestamp" : "201603240101",
+			"status" : {
+				"type" : 1,
+				"name" : "审批中",
+				"discript" : ""
+			},
+			"step" : {
+				"type" :  3,	
+				"discript" : "1月4日 15：11 主管审批中"
+			}
+			
+		},{
+			"id" : 1234321,
+			"title" : "解决方案重装旅-FBB",
+			"date" : "02月28日",
+			"timestamp" : "201603240101",
+			"status" : {
+				"type" : 2,
+				"name" : "报名成功",
+				"discript" : "距离开班  21 天"
+			},
+			"step" : {
+				"type" :  4,	
+				"discript" : "1月5日 12：01恭喜您！报名成功！"
+			}
+			
+		}]
+	}
+}

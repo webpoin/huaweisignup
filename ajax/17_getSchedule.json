@@ -1,0 +1,137 @@
+{
+    "sysDate": "2016-04-20 19:41:10",
+    "totalCount": 1,
+    "status": 1,
+    "data": [
+        {
+            "subPrjCode": "590102101",
+            "courseListData": [
+                {
+                    "startTime": "09:00",
+                    "courseId": 4521,
+                    "day": "day0",
+                    "endTime": "11:00",
+                    "courseVersion": "V1",
+                    "courseCode": "CN5901021001",
+                    "courseName": "人力资源-区域组织变革",
+                    "invalidFlag": 0
+                },
+                {
+                    "startTime": "11:10",
+                    "courseId": 4522,
+                    "day": "day0",
+                    "endTime": "12:10",
+                    "courseVersion": "V1.0",
+                    "courseCode": "CN5901021002",
+                    "courseName": "人力资源-项目奖讨论",
+                    "invalidFlag": 0
+                },
+                {
+                    "startTime": "14:00",
+                    "courseId": 4523,
+                    "day": "day0",
+                    "endTime": "17:00",
+                    "courseVersion": "V1.0",
+                    "courseCode": "CN5901021003",
+                    "courseName": "人力资源-战略预备队",
+                    "invalidFlag": 0
+                },
+                {
+                    "startTime": "17:10",
+                    "courseId": 4524,
+                    "day": "day0",
+                    "endTime": "18:10",
+                    "courseVersion": "V1.0",
+                    "courseCode": "CN5901021004",
+                    "courseName": "人力资源-GMDP优化讨论",
+                    "invalidFlag": 0
+                },
+                {
+                    "startTime": "09:00",
+                    "courseId": 4525,
+                    "day": "day1",
+                    "endTime": "09:50",
+                    "courseVersion": "V1.0",
+                    "courseCode": "CN5901021005",
+                    "courseName": "战略专题-区域战略规划能力提升研讨",
+                    "invalidFlag": 0
+                },
+                {
+                    "startTime": "09:50",
+                    "courseId": 4526,
+                    "day": "day1",
+                    "endTime": "10:50",
+                    "courseVersion": "V1.0",
+                    "courseCode": "CN5901021006",
+                    "courseName": "关键信息沟通-合规运营",
+                    "invalidFlag": 0
+                },
+                {
+                    "startTime": "11:00",
+                    "courseId": 4527,
+                    "day": "day1",
+                    "endTime": "11:30",
+                    "courseVersion": "V1.0",
+                    "courseCode": "CN5901021007",
+                    "courseName": "关键信息沟通-子董会",
+                    "invalidFlag": 0
+                },
+                {
+                    "startTime": "11:30",
+                    "courseId": 4528,
+                    "day": "day1",
+                    "endTime": "12:00",
+                    "courseVersion": "V1.0",
+                    "courseCode": "CN5901021008",
+                    "courseName": "关键信息沟通-公共关系专题",
+                    "invalidFlag": 0
+                },
+                {
+                    "startTime": "12:00",
+                    "courseId": 4529,
+                    "day": "day1",
+                    "endTime": "12:30",
+                    "courseVersion": "V1.0",
+                    "courseCode": "CN5901021009",
+                    "courseName": "其他-行政变革进展沟通",
+                    "invalidFlag": 0
+                },
+                {
+                    "startTime": "14:00",
+                    "courseId": 4530,
+                    "day": "day1",
+                    "endTime": "16:00",
+                    "courseVersion": "V1.0",
+                    "courseCode": "CN5901021010",
+                    "courseName": "战略专题-公司ICT基础设施812战略规划宣讲及区域落地研讨",
+                    "invalidFlag": 0
+                },
+                {
+                    "startTime": "16:00",
+                    "courseId": 4531,
+                    "day": "day1",
+                    "endTime": "16:30",
+                    "courseVersion": "V1.0",
+                    "courseCode": "CN5901021011",
+                    "courseName": "战略专题-云核心网战略及2016机会点",
+                    "invalidFlag": 0
+                },
+                {
+                    "startTime": "16:30",
+                    "courseId": 4532,
+                    "day": "day1",
+                    "endTime": "18:30",
+                    "courseVersion": "V1.0",
+                    "courseCode": "CN5901021012",
+                    "courseName": "竞争专题",
+                    "invalidFlag": 0
+                }
+            ],
+            "subPrjId": 3003,
+            "totalDayCount": 2,
+            "subPrjName": "区域总裁会议",
+            "courseListVersion": "V1.0"
+        }
+    ],
+    "msg": "OK"
+}

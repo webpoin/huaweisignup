@@ -1,0 +1,28 @@
+{
+    "sysDate": "2016-04-20 21:17:58",
+    "status": 1,
+    "data": {
+        "enrollMax": 10,
+        "classMates": [
+            {
+                "deptName": "030720/核心网Data Center & Media Network解决方案集成与验证部",
+                "picUrl": "http://w3.huawei.com/w3lab/rest/yellowpage/face/test1/120",
+                "memberName": "袁伟",
+                "memberCode": "test1"
+            },
+            {
+                "deptName": "023280/HR IT架构与方案部",
+                "picUrl": "http://w3.huawei.com/w3lab/rest/yellowpage/face/00175810/120",
+                "memberName": "蔡安恒",
+                "memberCode": "00175810"
+            },
+            {
+                "picUrl": "http://w3.huawei.com/w3lab/rest/yellowpage/face/00291659/120",
+                "memberName": "zhangjie 00291659",
+                "memberCode": "00291659"
+            }
+        ],
+        "enrollNum": 2
+    },
+    "msg": "OK"
+}

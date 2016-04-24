@@ -1,0 +1,14 @@
+{
+	"version": 0,
+	"result": true,
+	"message": "这是提示或异常信息",
+	"error": "B",
+	"total": 0,
+	"data": {
+		"discipline" : "一、学生必须准时上下课，不得迟到和早退。 上课期间禁止传呼机和手机鸣叫，不得受理 传呼和手机。迟到学生需取得教师同意后方 准就",
+		"position" : "阿尔巴尼亚  以色列  美国  英国  深圳  广州葡萄牙  西班牙",
+		"food" : "澜泰   日本料理    自助餐   Livy",
+		"travel" : "链接：<a href=\"#\">w3huawei.etraval.com</a>",
+		"visa" : ""
+	}
+}

@@ -1,0 +1,239 @@
+﻿{
+    "sysDate": "2016-04-20 19:38:59",
+    "totalCount": 7,
+    "status": 1,
+    "data": [
+        {
+            "projectTypeName": "CBG学习",
+            "projectList": [
+                {
+                    "courseListData": [],
+                    "projectCode": "5403603",
+                    "totalDayCount": 0,
+                    "projectId": "761",
+                    "projectName": "GTS国家交付副代表角色认知"
+                },
+                {
+                    "courseListData": [],
+                    "projectCode": "5808257",
+                    "totalDayCount": 0,
+                    "projectId": "861",
+                    "projectName": "训战结合循环赋能方法总结"
+                },
+                {
+                    "courseListData": [],
+                    "projectCode": "5808257",
+                    "totalDayCount": 0,
+                    "projectId": "921",
+                    "projectName": "为学精品课"
+                },
+                {
+                    "courseListData": [],
+                    "projectCode": "5808257",
+                    "totalDayCount": 0,
+                    "projectId": "942",
+                    "projectName": "人力资源战略预备队"
+                }
+            ]
+        },
+        {
+            "projectTypeName": "管理能力",
+            "projectList": [
+                {
+                    "courseListData": [],
+                    "projectCode": "5901021",
+                    "totalDayCount": 0,
+                    "projectId": "550",
+                    "projectName": "区域总裁会议"
+                },
+                {
+                    "courseListData": [],
+                    "projectCode": "5901115",
+                    "totalDayCount": 0,
+                    "projectId": "1601",
+                    "projectName": "杭州一般服务项目"
+                },
+                {
+                    "courseListData": [],
+                    "projectCode": "5901114",
+                    "totalDayCount": 0,
+                    "projectId": "1562",
+                    "projectName": "南京一般服务项目"
+                },
+                {
+                    "courseListData": [],
+                    "projectCode": "8000901",
+                    "totalDayCount": 0,
+                    "projectId": "1621",
+                    "projectName": "运营商BG二营项目"
+                },
+                {
+                    "courseListData": [],
+                    "projectCode": "5901092",
+                    "totalDayCount": 0,
+                    "projectId": "1641",
+                    "projectName": "电信C网配套数通项目"
+                }
+            ]
+        },
+        {
+            "projectTypeName": "变革项目",
+            "projectList": [
+                {
+                    "courseListData": [],
+                    "projectCode": "5438281",
+                    "totalDayCount": 0,
+                    "projectId": "1361",
+                    "projectName": "行政战略预备队"
+                },
+                {
+                    "courseListData": [],
+                    "projectCode": "5403605",
+                    "totalDayCount": 0,
+                    "projectId": "1381",
+                    "projectName": "变革战略预备队"
+                },
+                {
+                    "courseListData": [],
+                    "projectCode": "8002927",
+                    "totalDayCount": 0,
+                    "projectId": "1581",
+                    "projectName": "监管重装旅"
+                }
+            ]
+        },
+        {
+            "projectTypeName": "项目经营与管理",
+            "projectList": [
+                {
+                    "courseListData": [],
+                    "projectCode": "5808257",
+                    "totalDayCount": 0,
+                    "projectId": "861",
+                    "projectName": "训战结合循环赋能方法总结"
+                },
+                {
+                    "courseListData": [],
+                    "projectCode": "5438552",
+                    "totalDayCount": 0,
+                    "projectId": "1101",
+                    "projectName": "交付项目管理专业培训"
+                },
+                {
+                    "courseListData": [],
+                    "projectCode": "5808257",
+                    "totalDayCount": 0,
+                    "projectId": "921",
+                    "projectName": "为学精品课"
+                },
+                {
+                    "courseListData": [],
+                    "projectCode": "5808257",
+                    "totalDayCount": 0,
+                    "projectId": "942",
+                    "projectName": "人力资源战略预备队"
+                },
+                {
+                    "courseListData": [],
+                    "projectCode": "54303KF",
+                    "totalDayCount": 0,
+                    "projectId": "1161",
+                    "projectName": "项目管理资源池（公司战略预备队）"
+                },
+                {
+                    "courseListData": [],
+                    "projectCode": "54300W9",
+                    "totalDayCount": 0,
+                    "projectId": "1221",
+                    "projectName": "销售项目经理资源池（公司战略预备队）"
+                }
+            ]
+        },
+        {
+            "projectTypeName": "市场能力",
+            "projectList": [
+                {
+                    "courseListData": [],
+                    "projectCode": "8002039",
+                    "totalDayCount": 0,
+                    "projectId": "1561",
+                    "projectName": "后备干部项目管理与经营短训项目培训"
+                }
+            ]
+        },
+        {
+            "projectTypeName": "交付管理",
+            "projectList": [
+                {
+                    "courseListData": [],
+                    "projectCode": "5901136",
+                    "totalDayCount": 0,
+                    "projectId": "161",
+                    "projectName": "交付项目管理专业培训"
+                },
+                {
+                    "courseListData": [],
+                    "projectCode": "5462674",
+                    "totalDayCount": 0,
+                    "projectId": "744",
+                    "projectName": "国家行政主管能力提升"
+                }
+            ]
+        },
+        {
+            "projectTypeName": "新员工培训",
+            "projectList": [
+                {
+                    "courseListData": [],
+                    "projectCode": "5463680",
+                    "totalDayCount": 0,
+                    "projectId": "561",
+                    "projectName": "运营商BG销售类新员工培训(二营)"
+                },
+                {
+                    "courseListData": [],
+                    "projectCode": "5463680",
+                    "totalDayCount": 0,
+                    "projectId": "544",
+                    "projectName": "消费者BG战略预备队"
+                },
+                {
+                    "courseListData": [],
+                    "projectCode": "5808288",
+                    "totalDayCount": 0,
+                    "projectId": "607",
+                    "projectName": "外派思想教育远程认证项目"
+                },
+                {
+                    "courseListData": [],
+                    "projectCode": "5463680",
+                    "totalDayCount": 0,
+                    "projectId": "602",
+                    "projectName": "CSR海外大学生赴华实习项目"
+                },
+                {
+                    "courseListData": [],
+                    "projectCode": "5463680",
+                    "totalDayCount": 0,
+                    "projectId": "601",
+                    "projectName": "海外子公司董事赋能"
+                },
+                {
+                    "courseListData": [],
+                    "projectCode": "5808288",
+                    "totalDayCount": 0,
+                    "projectId": "604",
+                    "projectName": "新员工入职引导培训（英文/深圳）"
+                },
+                {
+                    "courseListData": [],
+                    "projectCode": "54303KK",
+                    "totalDayCount": 0,
+                    "projectId": "743",
+                    "projectName": "新员工入职引导培训（中文/深圳）"
+                }
+            ]
+        }
+    ],
+    "msg": "OK"
+}

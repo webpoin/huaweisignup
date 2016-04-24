@@ -1,0 +1,74 @@
+{
+	"version": 0,
+	"result": true,
+	"message": "这是提示或异常信息",
+	"error": "B",
+	"total": 0,
+	"data": [
+		{
+			"id": 1111,
+			"title" : "变革战略预备队",
+			"picture" : "images/change.png",
+			"name" : "李冰班",
+			"discript" : "变革战略预备队是为公司变革战略调整储备的将士与精英，目标 是为了更好的多产粮。",
+			"duration" : "30天",
+			"start" : "2016.03.02",
+			"places" : 38,
+			"location" : "深圳",
+			"price" :  "RMB 500",
+			"payway" : "组织付费"
+		},
+		{
+			"id": 1111,
+			"title" : "变革战略预备队",
+			"picture" : "images/reserve.png",
+			"name" : "李冰班",
+			"discript" : "变革战略预备队是为公司变革战略调整储备的将士与精英，目标 是为了更好的多产粮。",
+			"duration" : "30天",
+			"start" : "2016.03.02",
+			"places" : 38,
+			"location" : "深圳",
+			"price" :  "RMB 500",
+			"payway" : "组织付费"
+		},
+		{
+			"id": 1111,
+			"title" : "变革战略预备队",
+			"picture" : "images/resource.png",
+			"name" : "李冰班",
+			"discript" : "变革战略预备队是为公司变革战略调整储备的将士与精英，目标 是为了更好的多产粮。",
+			"duration" : "30天",
+			"start" : "2016.03.02",
+			"places" : 38,
+			"location" : "深圳",
+			"price" :  "RMB 500",
+			"payway" : "组织付费"
+		},
+		{
+			"id": 1111,
+			"title" : "变革战略预备队",
+			"picture" : "images/reinstall.png",
+			"name" : "李冰班",
+			"discript" : "变革战略预备队是为公司变革战略调整储备的将士与精英，目标 是为了更好的多产粮。",
+			"duration" : "30天",
+			"start" : "2016.03.02",
+			"places" : 38,
+			"location" : "深圳",
+			"price" :  "RMB 500",
+			"payway" : "组织付费"
+		},
+		{
+			"id": 1111,
+			"title" : "变革战略预备队",
+			"picture" : "images/organ.png",
+			"name" : "李冰班",
+			"discript" : "变革战略预备队是为公司变革战略调整储备的将士与精英，目标 是为了更好的多产粮。",
+			"duration" : "30天",
+			"start" : "2016.03.02",
+			"places" : 38,
+			"location" : "深圳",
+			"price" :  "RMB 500",
+			"payway" : "组织付费"
+		}
+	]
+}

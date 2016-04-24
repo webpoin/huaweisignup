@@ -1,0 +1,14 @@
+{
+	"version": 0,
+	"result": true,
+	"message": "这是提示或异常信息",
+	"error": "B",
+	"total": 0,
+	"data": [
+		{"id" : 123454321, "url" : "#", "picture" : "images/change.png","title" : "变革战略预备队-阿甘班"},
+		{"id" : 123454321, "url" : "#", "picture" : "images/reserve.png","title" : "干部部长战略预备队—讲师训"},
+		{"id" : 123454321, "url" : "#", "picture" : "images/organ.png","title" : "监管重装旅-机关班"},
+		{"id" : 123454321, "url" : "#", "picture" : "images/reinstall.png","title" : "解决方案重装旅-FBB"},
+		{"id" : 123454321, "url" : "#", "picture" : "images/resource.png","title" : "项目管理资源池-讲师训"}
+	]
+}
